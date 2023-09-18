@@ -79,6 +79,9 @@ class _CarouselSliderState extends State<CarouselSlider> {
                   slider,
                   height: height,
                   fit: BoxFit.fill,
+                  errorBuilder: (context, error, stackTrace) {
+                    return const Placeholder();
+                  },
                 );
               },
             ),

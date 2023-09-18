@@ -35,16 +35,17 @@ class ProductsGrid extends StatelessWidget {
                 children: [
                   Hero(
                     tag: '${product.id}',
-                    child: Container(
-                      height: 200,
-                      decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(10),
-                            topRight: Radius.circular(10)),
-                        image: DecorationImage(
-                          image: NetworkImage(product.images!.first),
-                          fit: BoxFit.cover,
-                        ),
+                    child: ClipRRect(
+                      borderRadius: const BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          topRight: Radius.circular(10)),
+                      child: Image.network(
+                        product.images!.first,
+                        fit: BoxFit.cover,
+                        height: 200,
+                        errorBuilder: (context, error, stackTrace) {
+                          return const Placeholder(fallbackHeight: 200,);
+                        },
                       ),
                     ),
                   ),

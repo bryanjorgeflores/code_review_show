@@ -64,7 +64,7 @@ class _MainPageState extends State<MainPage> {
                             children: [
                               Padding(
                                 padding:
-                                    const EdgeInsets.symmetric(horizontal: 10),
+                                    const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
                                 child: TextWidget(
                                   '${category?.name}',
                                   fontSize: 18,

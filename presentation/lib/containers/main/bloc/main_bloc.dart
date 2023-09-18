@@ -15,6 +15,7 @@ class MainBloc extends Bloc<MainEvent, MainState> {
   }
 
   void _onLoadProducts(LoadProductsEvent event, Emitter<MainState> emit) async {
+    emit(const MainState.initial());
     await emit.forEach<Map<ProductCategory?, List<Product>>>(
         _mainRepository.getProducts(), onData: (products) {
       return state.copyWith(

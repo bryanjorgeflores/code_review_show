@@ -25,7 +25,7 @@ class MainMapping {
       if (existingCategories.isEmpty) {
         groupedProducts.addAll({
           category: products
-              .where((element) => element.category?.id == product.category?.id)
+              .where((element) => element.category?.id == category?.id)
               .toList()
         });
       }

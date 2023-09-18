@@ -47,7 +47,7 @@ class _MainPageState extends State<MainPage> {
                 onRefresh: () async {
                   _mainBloc.add(LoadProductsEvent());
                 },
-                child: state.products == {}
+                child: state.products.isEmpty
                     ? const Center(
                         child: CircularProgressIndicator(),
                       )

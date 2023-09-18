@@ -1,6 +1,4 @@
-# Flutter BoilerPlate base
-
-A new Flutter project to get ready to code fast.
+# Code Review Show
 
 ## How to run this app
 

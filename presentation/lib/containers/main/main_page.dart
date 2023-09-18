@@ -1,17 +1,10 @@
-import 'package:domain/domain.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:presentation/containers/commons/env/bloc/env_bloc.dart';
 import 'package:presentation/containers/commons/messages/bloc/message_bloc.dart';
 import 'package:presentation/containers/main/bloc/main_bloc.dart';
 import 'package:presentation/containers/main/widgets/products_grid.dart';
-import 'package:presentation/routes/routes.dart';
-import 'package:presentation/styles/theme.dart';
 import 'package:presentation/widgets/text.dart';
-import 'package:presentation/widgets/text_icon_button.dart';
-import 'package:presentation/widgets/text_button.dart';
-import 'package:presentation/widgets/toast.dart';
 
 class MainPage extends StatefulWidget {
   final String? url;

@@ -1,9 +1,7 @@
 import 'dart:async';
 
-import 'package:domain/domain.dart';
 import 'package:flutter/material.dart';
 import 'package:presentation/styles/theme.dart';
-import 'package:presentation/widgets/text.dart';
 
 class CarouselSlider extends StatefulWidget {
   final List<String> slides;
